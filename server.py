@@ -3,7 +3,7 @@ from flask import Flask, Response
 from picamera2 import Picamera2
 
 app = Flask(__name__)
-cam = Picamera2
+cam = Picamera2()
 
 # Configure the camera's resolution
 config = cam.create_preview_configuration(main={"size": (640, 480)})
